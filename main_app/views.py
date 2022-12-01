@@ -32,3 +32,6 @@ def contact(request):
 
 def blog(request):
     return render(request, 'blog.html')
+
+def cats_index(request):
+    return render(request, 'cats/index.html', { 'cats': cats })
